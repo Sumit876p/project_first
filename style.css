@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+    /* background-color: #f7f7f7f7; */
+} 
+/* @font-face {
+    font-family: 'Futura-Bold';
+    src: url(./Futura-Bold.ttf) format('truetype');
+  } */
+
+  *::selection{
+    color: white;
+    background-color: black;
+  }
+html, body{ 
+    height: 100%;
+    width: 100%;
+    
+    
+}   
+#body{
+    background-color: #333; 
+}
+#nav{
+    /* height: 100px; */
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#nav #navpart-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+#links{
+    padding: 4px;
+}
+
+#nav-part-1{
+    /* background-color: cadetblue; */
+    height: 150px;
+    overflow: hidden;
+    width: 30vh;
+    margin-left: -10vh;
+    margin-top: -10vh;
+    
+    
+    }
+
+#nav-part-1 #svg{
+    text-align: left;
+}
+
+ #navpart-2 #links a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-weight: 060px;
+    font-size: 30x;
+    margin-right: 0 20pxpx;
+    padding: 40px;
+    
+
+ }
+ #navpart-2 #icons i{
+    font-size: 22px;
+    margin-right: 0 20px;
+    font-weight: 100;
+    padding: 0 20px;
+ }
+
+#cursor{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(243, 131, 209);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+    /* z-index: 80; */
+    
+      
+      
+}
+#page1{
+    min-height: 70vh;  
+    position: relative;
+    width: 100%;
+    /* background-color: #f7f7f7; */
+} 
+
+#page1 h1{
+    font-size: 28vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    padding-top: 150px;
+    font-weight: 799;
+    margin-left: 5px;
+    line-height: 24vh;
+    letter-spacing: -5px;
+    margin-bottom: 25px;
+    
+}
+
+#video-container{
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    position: relative;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container #play{
+    padding: 1.4vw 1vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(238, 238, 247);
+    font-size: 1vw;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: helvetica;
+    font-weight: 800;
+    border-radius: 50%;
+    pointer-events: none;
+    backdrop-filter: blur(8px);
+    transition: all 0.5s;
+    opacity: 5px;
+    scale: 0;
+
+}
+
+#page2{
+   min-height: 100vh;
+    width: 100%;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vw 1vw; 
+    justify-content: space-evenly;
+    background-color: #f7f7f7f7;
+    
+}
+
+ #page2 .elem{
+    height: 100vh;
+    width: 30%;
+     /* background-color: red;  */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.2;
+}
+.elem .div{
+    height: 40px;
+    width: 60%;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 10;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    background-color: plum;
+
+}
+    #page2 .elem .div:hover{
+        height: 200px;
+        transition: all 0.5s;
+        direction: bottom;
+         
+    }   
+          
+      
+
+    #page3{
+        min-height: 120vh;
+        width: 100%;
+        position: relative;
+        /* background-color: #f7f7f7; */
+        display: flex; 
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        
+    } 
+
+    .child{
+        height: 40vh;
+        width: 40vw;
+        /* background-color: red; */
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .child img{
+        height: 100%;
+        width: 100vh;
+        /* z-index: 100; */
+        
+}
+
+    #page-4{
+        min-height: 50vw;
+        width: 50vw;
+        position: relative;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+  
+    
+
+
+
+    
+
+   @media  (max-width: 1074x929px){ 
+    #page1{
+        min-height: 70vh;
+        padding: 0 3vw;  
+        position: relative;
+        padding-top: 20vh;
+    } 
+    #page1 h1{
+        font-size: 8vh;
+        font-family: helvetica;
+        text-transform: uppercase;
+        padding-top: 150px;
+        font-weight: 800;
+        margin-left: -8px;
+        line-height: 7vh;
+        letter-spacing: -1px;
+    }
+
+    #video-container{
+        height: 25vh;
+        margin-top: 2vw;
+    }
+    
+    #video-container video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        
+    }
+
+
+    #video-container #play{
+        padding: 8vw 5vw;
+        background-color: rgb(2, 2, 2);
+        color: rgb(247, 247, 248);
+        font-size: 5vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-transform: uppercase;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%,-50%);
+    
+    } 
+        #page2{
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        object-fit: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        object-fit: cover;
+        align-items: center;
+        padding: 5vw 1vw;
+
+    } 
+    #page2 .elem{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 4vw;
+        background-color: white;
+
+    }
+    
+}
+
+
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.2;
+    margin-bottom: 3vw;
+}  
+
+
+
+
+
+     
